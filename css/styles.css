@@ -479,14 +479,14 @@ overflow: hidden;
 }
 
 .footer-media {
-    color: #FFFFFF;
+  margin-bottom: 16px;
+  color: #FFFFFF;
   font-size: 16px;
   font-family: Roboto;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
   word-wrap: break-word;
-  margin-bottom: 16px;
 }
 
 .icon-ul {
@@ -518,30 +518,27 @@ background-color: #31d0aa;
     fill: #FFFFFF;
 }
 
-.form-footer-div {
+.form-footer {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-left: 80px;
 }
 
-.label-footer-div {
-    display: flex;
+.label-footer {
     gap: 24px;
 }
 
 .input-footer {
     width: 264px;
     height: 40px;
-    background-color: #2E2F42;
-    border: inset 1px #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
     border-radius: 4px;
     padding-left: 16px;
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.04em;
-    line-height: 24px;
+    line-height: 2;
     font-size: 12px;
     color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .input-footer:hover, .input-footer:focus {
@@ -558,7 +555,7 @@ background-color: #31d0aa;
 
 .button-footer {
     display: flex;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     background-color: #4D5AE5;
     border: none;
@@ -566,8 +563,9 @@ background-color: #31d0aa;
     color: #FFFFFF;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
+    font-weight: 500;
     font-style: medium;
     text-align: center;
     align-items: center;
@@ -580,10 +578,8 @@ background-color: #31d0aa;
     background-color: #31d0aa;
 }
 
-.svg-footer {
-    width: 24px;
-    height: 24px;
-    margin-left: 16px;
+.form-svg {
+margin-left: 16px;
 }
 
 .subscribe {
@@ -594,6 +590,7 @@ background-color: #31d0aa;
     font-size: 16px;
     font-style: medium;
     font-weight: 500;
+    margin-bottom: 16px;
 }
 
 .modal-overlay {
