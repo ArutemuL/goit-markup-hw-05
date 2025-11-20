@@ -530,8 +530,8 @@ background-color: #31d0aa;
 .input-footer {
     width: 264px;
     height: 40px;
+    border: 1px solid #ffffff;
     background-color: transparent;
-    border: 1px solid #FFFFFF;
     border-radius: 4px;
     padding-left: 16px;
     font-family: "Roboto", sans-serif;
