@@ -518,6 +518,10 @@ background-color: #31d0aa;
     fill: #FFFFFF;
 }
 
+.form-footer-div {
+    margin-left: 80px;
+}
+
 .form-footer {
     display: flex;
     gap: 24px;
