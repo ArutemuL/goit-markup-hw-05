@@ -672,6 +672,10 @@ border: none;
     margin-bottom: 8px;
 }
 
+.modal-label-div {
+    margin-bottom: 8px;
+}
+
 .modal-label {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
