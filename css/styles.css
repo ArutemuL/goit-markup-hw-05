@@ -687,21 +687,96 @@ border: none;
     margin-bottom: 4px;
 }
 
-.modal-input {
-    width: 360px;
-    height: 58px;
-    border: 1px solid #2E2F42;
-    border-radius: 4px;
-    padding-left: 16px;;
-    color: #2E2F42;
+.modal-input-div {
+    position: relative;
 }
 
-.modal-input a:hover , .modal-input a:focus {
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 38px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus {
     border-color: #4D5AE5;
 }
 
+.modal-svg {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus + .modal-svg {
+    fill: #4D5AE5;
+}
+
+.modal-label-textarea {
+    margin-bottom: 16px;
+}
+
+.modal-textarea {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    resize: none;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea:focus {
+    border-color: #4D5AE5;
+}
+
+.modal-checkbox-div {
+    margin-bottom: 24px;
+}
+
+.modal-checkbox-label {
+    font-size: 12px;
+    line-height: 1.17;
+    color: #8E8F99;
+    letter-spacing: 0.04em;
+}
+
+.modal-checkbox-span {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.modal-checkbox:checked + .modal-checkbox-span {
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
+}
+
+.checkbox-a {
+    color: #4D5AE5;
+}
+
 .modal-button {
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     background-color: #4D5AE5;
     border: none;
@@ -716,4 +791,6 @@ border: none;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-weight: 500;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
