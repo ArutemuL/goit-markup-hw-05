@@ -670,10 +670,7 @@ border: none;
 }
 
 .modal-form {
-    display: flex;
-    flex-direction: column;
     gap: 8px;
-    margin-bottom: 8px;
 }
 
 .modal-label-div {
@@ -767,6 +764,7 @@ border: none;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 
 input:checked + .modal-checkbox-label .modal-checkbox-span {
